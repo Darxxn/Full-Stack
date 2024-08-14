@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    div p {
+      font-size: 5rem;
+      color: white;
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    div > div > p {
+      color: black;
+    }
+
+    .flag {
+      background-color: #CE1126;
+      width: 900px;
+      height: 600px;
+      position: relative;
+      top: 50px;
+    }
+
+    .flag > div {
+      background-color: #002868;
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: 150px;
+    }
+
+    div > div > div {
+      background-color: white;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      left: 350px;
+      position: absolute;
+      top: 50px;
+    }
+
+    h1 {
+      position: relative;
+      top: 15px;
+      left: 265px;
+    }
+
+    .Copyright {
+      color: black;
+      font-size: small;
+      position: relative;
+      text-align: left;
+      left: 425px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Flag of Laos made with CSS</h1>
+    <p class="Copyright">by Stone Lai</p>
+  </div>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
