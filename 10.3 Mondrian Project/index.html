@@ -24,6 +24,22 @@
       background-color: #F0F1EC;
     }
 
+    .w1 {
+      grid-column: span 3;
+    }
+
+    .w2 {
+      grid-row: span 2;
+    }
+
+    .w3 {
+      grid-area: span 2 / span 2;
+    }
+
+    .w4 {
+      grid-row: span 2;
+    }
+
     .red {
       background-color: #E72F24;
     }
@@ -34,6 +50,7 @@
 
     .blue {
       background-color: #004592;
+      border-bottom: 10px solid #000;
     }
 
     .yellow {
@@ -42,20 +59,46 @@
 
     .container {
       display: grid;
-      grid-template-columns: 320px 30px 30px 30px 30px;
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    h1 {
+      display: block;
+      position: absolute;
+      top: 0;
     }
   </style>
 </head>
 
 <body>
-  <!-- Write your HTML here -->
-   <div class="container">
-    <div class="white"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="blue"></div>
-    <div class="yellow"></div>
-   </div>
+  <h1>Mondrian Project</h1>
+  <div class="container">
+  <div class="red"></div>
+  <div class="white w1"></div>
+
+  <div class="white w2"></div>
+  <div class="white w3"></div>
+  <div class="blue"></div>
+  <div class="white w4"></div>
+
+  <div class="white"></div>
+  <div class="yellow"></div>
+  <div class="black"></div>
+  </div>
 </body>
 
 </html>
