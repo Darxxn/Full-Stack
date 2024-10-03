@@ -218,9 +218,9 @@ button:hover {
         width: 400px;
         height: 400px;
     }
-    /* .navbar {
-        margin-right: 50px;
-    } */
+    .profile-image {
+        margin-top: 10px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -235,5 +235,20 @@ button:hover {
     }
     button {
         font-size: 13px;
+    }
+    .profile-image {
+        margin-left: 35px;
+    }
+    .nav-link {
+        margin-top: 15px;
+    }
+    .info-icon, .github-icon, .linkedin-icon {
+        margin-top: 10px;
+    }
+    .bottom-container {
+        margin-left: 90px;
+    }
+    .bottom-container h2 {
+        margin-left: -70px;
     }
 }
