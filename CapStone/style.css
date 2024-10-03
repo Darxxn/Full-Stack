@@ -11,17 +11,6 @@ h1 {
     unicode-bidi: isolate;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-    font-size: 16px;
-    line-height: 25px;
-}
-
 hr {
     border: dotted #eaf6f6 6px;
     border-bottom: none;
@@ -41,6 +30,7 @@ hr {
     height: 200px;
     margin-top: 100px;
     margin-left: 90px;
+    border: #fff solid;
 }
 
 * {
@@ -92,6 +82,19 @@ body {
     margin-top: -10px;
 }
 
+.card-font{
+    margin-top: 250px;
+}
+
+.minimalist {
+    color: black;
+    margin-top: -20px;
+}
+
+.smol-screen {
+    color: transparent;
+}
+
 ul.nav-links {
     margin: 0;
     float: right;
@@ -111,15 +114,20 @@ li.nav-link {
     width: 100%;
 }
 
+.card {
+    width: 400px;
+    height: 400px;
+}
+
 .main {
-    margin-top: 10vh;
+    margin-top: 8vh;
     display: inline-block;
     padding: 20px;
     width: 75%;
 }
 
-.main h2{
-    font-size: 35px;
+h2 {
+    margin-bottom: -30px;
 }
 
 button {
@@ -140,7 +148,6 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.56);
 }
 
-
 .image-wrapper {
     display:flex;
     margin-top: 5vh;
@@ -155,27 +162,70 @@ button:hover {
     margin-left: 10px;
 }
 
-.top-cloud {
+.right-cloud {
     position: absolute;
     right: 450px;
-    bottom: 150px;
+    bottom: 170px;
 }
 
-.bottom-cloud {
+.left-cloud {
     position: absolute;
-    left: 250px;
-    bottom: 310px;
+    left: 450px;
+    bottom: 75px;
+}
+
+.glass-cloud {
+    position: absolute;
+    right: 715px;
+    top: 215px;
 }
 
 @media screen and (max-width: 1075px) {
-    .content {
+    .content{
         flex-direction: column;
+        justify-content: center;
+        margin-left: 13%;
     }
+    .middle-container {
+        flex-direction: column;
+        margin-left: 2%;
+    }
+    .bottom-container {
+        flex-direction: column;
+        margin-left: 25%;
+    }
+
+    .bottom-container h2 {
+        margin-left: -200px;
+    }
+    .right-cloud {
+        right: 100px;
+        bottom: -215px;
+    }
+    .left-cloud {
+        left: 50px;
+        bottom: -280px;
+    }
+    .glass-cloud {
+        right: 150px;
+        top: 250px;
+    }
+    .smol-screen {
+        margin-top: 280px;
+        color: transparent;
+    }
+    .card {
+        width: 400px;
+        height: 400px;
+    }
+    /* .navbar {
+        margin-right: 50px;
+    } */
 }
 
 @media screen and (max-width: 720px) {
     .logo {
-        font-size: 22px;
+        font-size: 20px;
     }
     li.nav-link {
         font-size: 13px;
@@ -185,8 +235,5 @@ button:hover {
     }
     button {
         font-size: 13px;
-    }
-    .image-wrapper img {
-        max-width: 400px;
     }
 }
