@@ -12,7 +12,7 @@ h1 {
 }
 
 hr {
-    border: dotted #eaf6f6 6px;
+    border: dotted #4591d3 6px;
     border-bottom: none;
     width: 4%;
     margin: 80px auto;
@@ -46,7 +46,7 @@ body {
     color: #fff;
     margin: 0;
     text-align: center;
-    background-color: #e9ff99;
+    /* background-color: #e9ff99;
     background-image:
         radial-gradient(at 9% 89%, hsla(215, 90%, 73%, 1) 0px, transparent 50%),
         radial-gradient(at 24% 19%, hsla(14, 90%, 74%, 1) 0px, transparent 50%),
@@ -54,7 +54,7 @@ body {
         radial-gradient(at 29% 98%, hsla(316, 72%, 64%, 1) 0px, transparent 50%),
         radial-gradient(at 44% 9%, hsla(40, 96%, 77%, 1) 0px, transparent 50%),
         radial-gradient(at 10% 9%, hsla(76, 65%, 63%, 1) 0px, transparent 50%),
-        radial-gradient(at 89% 99%, rgb(163, 223, 159) 0px, transparent 50%);
+        radial-gradient(at 89% 99%, rgb(163, 223, 159) 0px, transparent 50%); */
     min-height: 100vh;
 }
 
@@ -130,6 +130,7 @@ li.nav-link {
 
 h2 {
     margin-bottom: -30px;
+    color: #000000;
 }
 
 button {
@@ -190,6 +191,7 @@ button:hover {
 
 .timeline-h2 {
     margin-bottom: 30px;
+    color: #000000;
 }
 
   .timeline:before {
@@ -248,7 +250,7 @@ button:hover {
     content: " ";
   }
   .timeline > li > .timeline-badge {
-    color: #fff;
+    color: #000000;
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -284,25 +286,14 @@ button:hover {
   .timeline-badge.primary {
     background-color: #2e6da4 !important;
   }
-  .timeline-badge.success {
-    background-color: #3f903f !important;
-  }
-  .timeline-badge.warning {
-    background-color: #f0ad4e !important;
-  }
-  .timeline-badge.danger {
-    background-color: #d9534f !important;
-  }
-  .timeline-badge.info {
-    background-color: #5bc0de !important;
-  }
   .timeline-title {
     margin-top: 0;
-    color: inherit;
+    color: #000000;
   }
   .timeline-body > p,
   .timeline-body > ul {
     margin-bottom: 0;
+    color: #000000;
   }
   .timeline-body > p + p {
     margin-top: 5px;
